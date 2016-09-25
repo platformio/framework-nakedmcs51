@@ -251,4 +251,19 @@ SBIT(P30,       0xB0, 0);
 SBIT(CLKOUT,    0xB0, 0);
 SBIT(P31,       0xB0, 1);
 
+#define IE0_VECTOR      0       /* 0x03 external interrupt 0 */
+#define TF0_VECTOR      1       /* 0x0b timer 0 */
+#define IE1_VECTOR      2       /* 0x13 external interrupt 1 */
+#define TF1_VECTOR      3       /* 0x1b timer 1 */
+#define SI0_VECTOR      4       /* 0x23 serial port 0 */
+#define TF2_VECTOR      5       /* 0x2b timer 2 */
+#define I2C_VECTOR      6       /* 0x33 i2c interrupt */
+#define KBI_VECTOR      7       /* 0x3b keyboard interrupt */
+#define BOD_VECTOR      8       /* 0x43 brown-out detect interrupt */
+#define SPI_VECTOR      9       /* 0x4b spi interrupt */
+#define WDT_VECTOR      10      /* 0x53 watchdog timer */
+#define ADC_VECTOR      11      /* 0x5b adc interrupt */
+#define CPT_VECTOR      12      /* 0x63 capture interrupt */
+#define PWM_VECTOR      14      /* 0x73 PWM interrupt */
+
 #endif
